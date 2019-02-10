@@ -1,0 +1,40 @@
+{
+  "name": "photobook",
+  "version": "1.0.0",
+  "description": "Photobook REST API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "cross-env NODE_ENV=production node index",
+    "test": "cross-env NODE_ENV=test echo \"Error: no test specified\"&& exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "javascript",
+    "express",
+    "mongodb"
+  ],
+  "author": "Gustavo Morales",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-request-id": "^1.4.1",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.6",
+    "morgan": "^1.9.1",
+    "strip-final-newline": "^2.0.0",
+    "winston": "^3.1.0"
+  }
+}
