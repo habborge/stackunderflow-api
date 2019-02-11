@@ -92,9 +92,7 @@ exports.create = (req, res, next) => {
 };
 
 exports.read = (req, res, next) => {
-  /*
   const populate = referencesNames.join(' ');
-
   const all = Model.find()
     .populate(populate)
     .populate({
@@ -102,12 +100,9 @@ exports.read = (req, res, next) => {
       populate: { path: 'userId' },
     });
   const count = Model.countDocuments();
-
-
   Promise.all([all.exec(), count.exec()])
     .then((data) => {
       const [docs] = data;
-
       res.json({
         success: true,
         items: docs,
@@ -116,11 +111,6 @@ exports.read = (req, res, next) => {
     .catch((err) => {
       next(new Error(err));
     });
-  */
-
-  const { doc } = req;
-
-  res.json(doc);
 };
 
 exports.update = (req, res, next) => {
